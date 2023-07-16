@@ -645,3 +645,71 @@ footer .copyright {
         font-size: 14px;
     }
 }
+
+@media (max-width:600px) {
+    #header {
+        padding: 10px 30px;
+    }
+
+    #hero {
+        padding: 0 7px;
+        background-position: top 30% right 39%;
+    }
+
+    #hero h4,
+    #hero h2,
+    #hero h1 {
+        font-size: 39px;
+        padding-bottom: 0;
+
+    }
+
+    #hero h1 {
+        font-size: 45px;
+    }
+
+    #hero p {
+        font-size: 17px;
+    }
+
+    .section-p1 {
+        padding: 35px 18px;
+    }
+
+    #banner {
+        height: 25vh;
+    }
+
+    #banner h2 {
+        font-size: 28px;
+    }
+
+    #sm-banner .banner-box2 {
+        margin-top: 20px;
+    }
+
+    #banner3 {
+        padding: 0px 20px;
+    }
+
+    #banner3 .banner-box {
+        width: 100%;
+    }
+
+    #newsletter .form {
+        width: 99%;
+    }
+
+    footer .col {
+        padding: 2%;
+    }
+
+    footer h4 {
+        font-size: 23px;
+    }
+
+    footer a,
+    footer p {
+        font-size: 18px;
+    }
+}
