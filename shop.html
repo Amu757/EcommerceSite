@@ -36,8 +36,33 @@
         <p>Save more with coupons & up to 70% off!</p>
     </section>
 
-    <section id="product1" class="section-p1">
-        <div class="pro-container">
+    <section id="product1" class="section-p1 shoppage">
+        <button class="normal" id="filterbtn">FILTER</button>
+        <div id="filterform" class="hide">
+            <form>
+                <a href="#" id="closefilter"><i class="fas far fa-times closebtn"></i></a>
+                <label for="">Product Name:</label>
+                <input type="text" onkeyup="filterdata()" placeholder="Name of Product" id="nameinput">
+                <label for="">Category:</label>
+                <select name="" onchange="filterdata()" id="category">
+                    <option value="">Select Category</option>
+                    <option value="Shirts">Shirts</option>
+                    <option value="Pants">Pants</option>
+                    <option value="T-Shirts">T-Shirts</option>
+                </select>
+                <div>
+                    <label for="">Min Price:</label>
+                    <input type="number" onkeyup="filterdata()" id="minprice" value=''><br>
+                    <label for="">Max Price:</label>
+                    <input type="number" onkeyup="filterdata()" id="maxprice" value=''>
+                </div>
+                <div id="buttons">
+                    <button class="normal reset" onclick="resetvalue()">Reset</button>
+                    <button class="normal" id="savebtn" onclick="filterdata()">Save</button>
+                </div>
+            </form>
+        </div>
+        <!-- <div class="pro-container" id="productbox">
             <div class="pro" onclick="window.location.href='singlepro.html';">
                 <img src="img/products/f1.jpg">
                 <div class="des">
@@ -70,7 +95,6 @@
                     <h4>$74</h4>
                 </div>
                 <a href="#" class="cart"><i class="fa fa-light fa-cart-shopping"></i></a>
-
             </div>
             <div class="pro">
                 <img src="img/products/f3.jpg">
@@ -127,7 +151,7 @@
                 <img src="img/products/f6.jpg">
                 <div class="des">
                     <span>adidas</span>
-                    <h5>Cartoon Astronaut T-Shirts</h5>
+                    <h5>Silk color Shirt</h5>
                     <div class="star">
                         <i class="fa-sharp fa-solid fa-star"></i>
                         <i class="fa-sharp fa-solid fa-star"></i>
@@ -135,7 +159,7 @@
                         <i class="fa-sharp fa-solid fa-star"></i>
                         <i class="fa-sharp fa-solid fa-star"></i>
                     </div>
-                    <h4>$74</h4>
+                    <h4>$80</h4>
                 </div>
                 <a href="#" class="cart"><i class="fa fa-light fa-cart-shopping"></i></a>
 
@@ -144,7 +168,7 @@
                 <img src="img/products/f7.jpg">
                 <div class="des">
                     <span>adidas</span>
-                    <h5>Cartoon Astronaut T-Shirts</h5>
+                    <h5>flowery pants</h5>
                     <div class="star">
                         <i class="fa-sharp fa-solid fa-star"></i>
                         <i class="fa-sharp fa-solid fa-star"></i>
@@ -152,7 +176,7 @@
                         <i class="fa-sharp fa-solid fa-star"></i>
                         <i class="fa-sharp fa-solid fa-star"></i>
                     </div>
-                    <h4>$74</h4>
+                    <h4>$50</h4>
                 </div>
                 <a href="#" class="cart"><i class="fa fa-light fa-cart-shopping"></i></a>
 
@@ -445,6 +469,8 @@
                 <a href="#" class="cart"><i class="fa fa-light fa-cart-shopping"></i></a>
 
             </div>
+        </div>  -->
+        <div class="pro-container" id="productbox">
         </div>
     </section>
 
