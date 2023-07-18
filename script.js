@@ -157,6 +157,7 @@ function displayproduct(objarr) {
             console.log('obj created: ');
             let pro = document.createElement('div');
             pro.classList.add('pro');
+            pro.setAttribute('onclick', 'window.location.href="singlepro.html";');
             let img = document.createElement('img');
             img.src = element.img;
             let des = document.createElement('div');
