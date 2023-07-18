@@ -119,7 +119,7 @@ const nameinput = document.getElementById('nameinput');
 const category = document.getElementById('category');
 const minprice = document.getElementById('minprice');
 const maxprice = document.getElementById('maxprice');
-
+// filter buttons
 if (filterbtn) {
     filterbtn.addEventListener('click', () => {
         filterform.classList.add('show');
@@ -207,19 +207,15 @@ function filterdata() {
 
     if (nameinput.value !== '' && nameinput.value !== null) {
         newlist = newlist.filter(product => { return product.name.toLowerCase().includes(nameinput.value.toLowerCase()) });
-        displayproduct(newlist);
     }
     if (category.value !== '') {
         newlist = newlist.filter(product => { return product.category.toLowerCase() == category.value.toLowerCase() });
-        displayproduct(newlist);
     }
     if (minprice.value !== '') {
         newlist = newlist.filter(product => { return product.price >= minprice.value });
-        displayproduct(newlist);
     }
     if (maxprice.value !== '') {
         newlist = newlist.filter(product => { return product.price <= maxprice.value });
-        displayproduct(newlist);
     }
 
     displayproduct(newlist);
