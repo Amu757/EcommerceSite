@@ -37,10 +37,11 @@
     </section>
 
     <section id="product1" class="section-p1 shoppage">
-        <button class="normal" id="filterbtn">FILTER</button>
-        <div id="filterform" class="hide">
+        <button class="normal" id="filterbtn" onclick=" openFilter()">FILTER</button>
+        <div id="filterform" class="show">
             <form>
-                <a href="#" id="closefilter"><i class="fas far fa-times closebtn"></i></a>
+                <h4>Filter</h4>
+                <a href="#" id="closefilter" onclick=" openFilter()"><i class="fas far fa-times"></i></a>
                 <label for="">Product Name:</label>
                 <input type="text" onkeyup="filterdata()" placeholder="Name of Product" id="nameinput">
                 <label for="">Category:</label>
@@ -58,7 +59,7 @@
                 </div>
                 <div id="buttons">
                     <button class="normal reset" onclick="resetvalue()">Reset</button>
-                    <button class="normal" id="savebtn" onclick="filterdata()">Save</button>
+                    <button class="normal" id="savebtn" onclick="filterdata(),openFilter()">Save</button>
                 </div>
             </form>
         </div>
